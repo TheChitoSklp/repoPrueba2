@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: century;
+}
+
+body{
+    min-height: 100%; /*Aquí indica el mínimo de altura que queremos que tenga*/
+    overflow: scroll;
+}
+
+html{height: 100%;} /*Indica que está permitido que los items del grid ocupen el 100% de la página*/
+
+.grid-container > *{/* >* idica que todos los elementos van a llevar ese estilo*/
+    text-align: center;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.header1{
+    grid-area: header1;
+    background-color: rgb(12, 12, 12);
+
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color: rgb(245, 216, 216);
+}
+
+.aside1{
+    grid-area: aside1;
+    background-color: black;
+    flex-direction: column;   
+}
+
+.article1{
+    grid-area: article1;
+    background-color: rgb(245, 216, 216);
+}
+
+.footer1{
+    grid-area: footer1;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.card{
+    padding: 10px;
+    display:inline-flex;
+    height: auto;
+    width: auto;
+    background-color: rgb(245, 216, 216);
+    color: black;
+}
+
+.card-title{
+    color: rgb(185, 92, 92);
+    font-style: bold;
+    font-display: shadow;
+}
+h1{
+    font-family: century;
+    color:whitesmoke;
+}
+
+/*Teléfono*/
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "header1"
+    "navbar"
+    "aside1"
+    "article1"
+    "footer1";
+}
+
